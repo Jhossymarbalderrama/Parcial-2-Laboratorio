@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1593519444 source:c:\users\balde\desktop\simulacro del parcial\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"Controller.h"
+	"LinkedList.h"
+	"vuelos.h"
+	"Pilotos.h"
+
+1593522668 source:c:\users\balde\desktop\simulacro del parcial\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1593522677 c:\users\balde\desktop\simulacro del parcial\linkedlist.h
+
+1593523107 source:c:\users\balde\desktop\simulacro del parcial\pilotos.c
+	"Pilotos.h"
+
+1593520718 source:c:\users\balde\desktop\simulacro del parcial\vuelos.c
+	<stdio.h>
+	<stdlib.h>
+	"vuelos.h"
+	"string.h"
+	"Pilotos.h"
+
+1593521751 source:c:\users\balde\desktop\simulacro del parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller_Balderrama.h"
+	"vuelos.h"
+	"Pilotos.h"
+
+1593460310 c:\users\balde\desktop\simulacro del parcial\controller.h
+	"LinkedList.h"
+
+1593467563 c:\users\balde\desktop\simulacro del parcial\vuelos.h
+	"LinkedList.h"
+	"Controller.h"
+
+1593522881 c:\users\balde\desktop\simulacro del parcial\pilotos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1593520286 c:\users\balde\desktop\simulacro del parcial\controller_balderrama.h
+	"LinkedList.h"
+
+1593520437 source:c:\users\balde\desktop\simulacro del parcial\controller_balderrama.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"Controller_Balderrama.h"
+	"LinkedList.h"
+	"vuelos.h"
+	"Pilotos.h"
+
