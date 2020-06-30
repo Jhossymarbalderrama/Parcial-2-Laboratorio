@@ -609,7 +609,7 @@ int archivos_Filtro_by_Duracion_3hs(LinkedList* listaVuelos){
 
     lista2 = ll_filter(listaVuelos,filtroDuracion);
 
-    if(controller_saveAsText("FiltroXduracion3hs.csv",lista2)){
+    if(controller_Balderrama_saveAsText("FiltroXduracion3hs.csv",lista2)){
         printf("\n[ - Filtro Vuelos de 3 horas - Archivo Creado. - ]\n");
         todoOk = 1;
     }
@@ -653,7 +653,7 @@ int archivos_Filtro_Vuelos_to_Portugal(LinkedList* listaVuelos){
 
     lista2 = ll_filter(listaVuelos,filtro_Portugal);
 
-    if(controller_saveAsText("FiltroXvuelosPortugal.csv",lista2)){
+    if(controller_Balderrama_saveAsText("FiltroXvuelosPortugal.csv",lista2)){
         printf("\n[ - Se ha creado un Archivo con este Listado. - ]\n");
         todoOk = 1;
     }
@@ -693,7 +693,7 @@ int archivos_Filtro_by_Chofer(LinkedList* listaVuelos){
 
     lista2 = ll_filter(listaVuelos,filtro_chofer);
 
-    if(controller_saveAsText("ListadoSinAlexLifeson.csv",lista2)){
+    if(controller_Balderrama_saveAsText("ListadoSinAlexLifeson.csv",lista2)){
         printf("[ - Archivo Creado sin el Piloto Alex Lifeson. - ]\n");
         todoOk = 1;
     }

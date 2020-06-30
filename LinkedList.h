@@ -58,5 +58,6 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order);
 LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*));
 int ll_count(LinkedList* this,int (*pFunc)(void*));
 
-LinkedList* ll_filter_parametro(LinkedList* this, int (*pFunc)(char*));
-
+/*
+LinkedList* ll_filter_parametro(LinkedList* this, int (*pFunc)(void*,char*));
+*/

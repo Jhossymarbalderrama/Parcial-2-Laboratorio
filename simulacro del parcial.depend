@@ -66,3 +66,72 @@
 	"vuelos.h"
 	"Pilotos.h"
 
+1593519444 source:c:\users\balde\desktop\parcial-2-laboratorio\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"Controller.h"
+	"LinkedList.h"
+	"vuelos.h"
+	"Pilotos.h"
+
+1593460310 c:\users\balde\desktop\parcial-2-laboratorio\controller.h
+	"LinkedList.h"
+
+1593524483 c:\users\balde\desktop\parcial-2-laboratorio\linkedlist.h
+
+1593524990 c:\users\balde\desktop\parcial-2-laboratorio\vuelos.h
+	"LinkedList.h"
+	"Controller_Balderrama.h"
+
+1593525401 c:\users\balde\desktop\parcial-2-laboratorio\pilotos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"LinkedList.h"
+	"Controller_Balderrama.h"
+
+1593520437 source:c:\users\balde\desktop\parcial-2-laboratorio\controller_balderrama.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"Controller_Balderrama.h"
+	"LinkedList.h"
+	"vuelos.h"
+	"Pilotos.h"
+
+1593520286 c:\users\balde\desktop\parcial-2-laboratorio\controller_balderrama.h
+	"LinkedList.h"
+
+1593524580 source:c:\users\balde\desktop\parcial-2-laboratorio\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1593525064 source:c:\users\balde\desktop\parcial-2-laboratorio\vuelos.c
+	<stdio.h>
+	<stdlib.h>
+	"vuelos.h"
+	"string.h"
+	"Pilotos.h"
+
+1593525289 source:c:\users\balde\desktop\parcial-2-laboratorio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller_Balderrama.h"
+	"vuelos.h"
+	"Pilotos.h"
+
+1593525342 source:c:\users\balde\desktop\parcial-2-laboratorio\pilotos.c
+	"Pilotos.h"
+

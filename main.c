@@ -69,6 +69,7 @@ int main()
             controller_Balderrama_ListPilotos(listaPilotos);
             break;
         case 9:
+            filtrar_List_Piloto_By_Name(listaPilotos);
             //filtrar_List_Piloto_By_Name(listaPilotos);
             //sin el nombre
             break;

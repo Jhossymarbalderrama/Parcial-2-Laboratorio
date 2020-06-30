@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "LinkedList.h"
+#include "Controller_Balderrama.h"
 
 #ifndef PILOTOS_H_INCLUDED
 #define PILOTOS_H_INCLUDED
@@ -26,5 +28,9 @@ ePiloto* piloto_Balderrama_NewParametros(char* idPiloto,char* nombrePiloto);
 int piloto_balderrama_setIdPiloto(ePiloto* this,int idPiloto);
 int piloto_balderrama_setNombrePiloto(ePiloto* this,char* nombrePiloto);
 
-int filtrar_List_Piloto_By_Name(ePiloto* this);
-int listar_Pilotos_by_Nombre(ePiloto* this);
+int filtrar_List_Piloto_By_Name(LinkedList* listaPilotos);
+
+
+int listar_Pilotos_by_Nombre(LinkedList* listaPilotos,char* name);
+
+int filtro_name_piloto(void* elemento,char* name);

@@ -197,61 +197,66 @@ int piloto_balderrama_setNombrePiloto(ePiloto* this,char* nombrePiloto){
     return todoOk;
 }
 
-int filtrar_List_Piloto_By_Name(ePiloto* this){
+int filtrar_List_Piloto_By_Name(LinkedList* listaPilotos){
 
     int allOk = -1;
-    /*
     char name_Piloto[128];
 
-    if(this != NULL){
-        controller_Balderrama_ListPilotos(this);
+    if(listaPilotos != NULL){
+        controller_Balderrama_ListPilotos(listaPilotos);
 
         printf("Ingrese Nombre del Piloto a Filtrar: ");
         fflush(stdin);
         gets(name_Piloto);
 
 
-        listar_Pilotos_by_Nombre(this,name_Piloto);
+       listar_Pilotos_by_Nombre(listaPilotos,name_Piloto);
 
         allOk = 0;
     }
-    */
 
-    if(this != NULL){
-        allOk = 0;
-    }
 
     return allOk;
 }
 
-int filtro_name_piloto(void* elemento){
-    int allOk = 0;
-    /*
-    int todoOk = 0;
+/*
+int filtro_name_piloto(void* elemento,char* name){
+    int allOk = -1;
+
     ePiloto* aux;
     aux = (ePiloto*) elemento;
 
-    if(strcmp(aux->nombrePiloto) == 0){
-        todoOk = 1;
+    if(strcmp(aux->nombrePiloto,name) == 0){
+        allOk = 0;
     }
 
-    return todoOk;
-    */
     return allOk;
 }
+*/
 
-
-int listar_Pilotos_by_Nombre(ePiloto* this){
+int listar_Pilotos_by_Nombre(LinkedList* listaPilotos,char* name){
 
     int todoOk = 0;
+    ePiloto* aux;
+    int flag = 0;
+    if(listaPilotos != NULL)
+    {
+        printf("\n[   ID       Nombre_Piloto ]\n\n");
+        for( int i=0; i < ll_len(listaPilotos); i++)
+        {
+            aux = (ePiloto*) ll_get(listaPilotos,i);
+            if(strcmpi(aux->nombrePiloto,name) == 0){
+                mostrarPiloto(aux);
+                flag = 1;
+            }
+        }
+        if(flag == 0)
+        {
+            printf("No hay Vuelos cargados para mostrar\n");
+        }
 
-    /*
-    LinkedList* lista2 = ll_newLinkedList();
-
-    lista2 = ll_filter_parametro(this,filtro_name_piloto);
-
-    controller_Balderrama_ListPilotos(lista2);
-    */
+        todoOk = 1;
+    }
 
     return todoOk;
 

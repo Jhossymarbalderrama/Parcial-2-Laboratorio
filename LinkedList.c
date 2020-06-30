@@ -629,7 +629,8 @@ int ll_count(LinkedList* this,int (*pFunc)(void*)){
     return vRetorno;
 }
 
-LinkedList* ll_filter_parametro(LinkedList* this, int (*pFunc)(char*)){
+/*
+LinkedList* ll_filter_parametro(LinkedList* this, int (*pFunc)(void*,char*)){
     LinkedList* retorno = ll_newLinkedList();
     void* auxElement;
     if(this != NULL && pFunc != NULL)
@@ -637,7 +638,7 @@ LinkedList* ll_filter_parametro(LinkedList* this, int (*pFunc)(char*)){
         for(int i=0;i<ll_len(this);i++)
         {
             auxElement = ll_get(this,i);
-            if(pFunc(auxElement))
+            if(pFunc(auxElement,valor))
             {
                 ll_add(retorno,auxElement);
             }
@@ -645,3 +646,4 @@ LinkedList* ll_filter_parametro(LinkedList* this, int (*pFunc)(char*)){
     }
     return retorno;
 }
+*/
